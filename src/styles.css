@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    font-family: "Roboto", sans-serif;
+    color: #6809e1;
+    transition: all 1s ease;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header {
+    height: 50px;
+    display: flex;
+    color: #6809e1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.logo button {
+    outline: none;
+    border: none;
+    background-color: white;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.btn-modo {
+    width: 148px;
+    height: 43px;
+    border-radius: 61px;
+    color: #6809e1;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #6809e1;
+    background-color: white;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.busqueda {
+    padding: 50px 50px 80px 50px;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #6809e1;
+}
+
+.busqueda p {
+    padding-bottom: 20px;
+}
+
+.busqueda input {
+    height: 52px;
+    width: 542px;
+    border-radius: 61px;
+    border: 1px solid #121212;
+    position: relative;
+    outline: none;
+    transition: all 1s ease;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+input::placeholder {
+    font-size: 18px;
+    font-weight: 100;
+    color: #3f3f3f;
+    font-family: Roboto;
+    padding: 30px;
+}
+
+.btn-search {
+    background-color: #572ee5;
+    position: relative;
+    border-radius: 0 61px 61px 0;
+    height: 52px;
+    width: 82px;
+    right: 56px;
+    top: 2px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.autocomplete {
+    width: 465px;
+    position: relative;
+    left: 110px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.autocomplete-item {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 8px;
+    border: 1px solid #121212;
+    position: relative;
+}
+
+.autocomplete-item:hover {
+    background-color: #3f3f3f;
+    color: white;
+}
+
+.Resultados {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #572ee5;
+}
+
+.loading img {
+    width: 80px;
+    height: 60px;
+}
+
+.GifContainer {
+    width: 900px;
+    height: auto;
+    background-color: #e7e7e7;
+    margin-top: 31px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.gifCard {
+    width: 250px;
+    height: 250px;
+    margin: 20px 25px;
+}
+
+.error {
+    margin-top: 20px;
+}
+
+.error p {
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.error img {
+    border-radius: 6px;
+}
+
+
+/* Modo Dark */
+
+.App-container.light {
+    background-color: white;
+}
+
+.App-container.dark {
+    background-color: rgb(44, 42, 42);
+}
+
+.dark .btn-modo {
+    border: 1px solid white;
+    background-color: rgb(44, 42, 42);
+    color: white;
+}
+
+.dark .logo img {
+    color: white;
+}
+
+.dark .logo button {
+    background-color: rgb(44, 42, 42);
+    transition: all 1s ease;
+}
+
+.dark .busqueda {
+    color: white;
+}
+
+.dark input {
+    background-color: rgb(44, 42, 42);
+    border: 1px solid white;
+    color: white;
+}
+
+.dark input::placeholder {
+    color: white;
+}
+
+.dark .btn-search {
+    border: 1px solid white;
+}
+
+.dark .autocomplete-item {
+    border: 1px solid white;
+}
+
+.dark .autocomplete-item:hover {
+    background-color: #572ee5;
+    color: white;
+}
+
+.dark .Resultados {
+    color: white;
+}
+
+.dark .GifContainer {
+    background-color: #121212;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 320px) {
+    .App {
+        width: 100%;
+    }
+    .Header {
+        width: 100%;
+        height: 50px;
+        padding: 40px 50px;
+        justify-content: space-between;
+    }
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+    .logo button {
+        outline: none;
+        border: none;
+        background-color: white;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .btn-modo {
+        width: 88px;
+        height: 33px;
+        border-radius: 61px;
+        font-size: 11px;
+    }
+    .busqueda {
+        padding: 20px 20px 25px 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .busqueda p {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .busqueda img {
+        height: 120px;
+    }
+    .busqueda input {
+        height: 22px;
+        width: 242px;
+        position: relative;
+        font-size: 13px;
+        padding-left: 10px;
+    }
+    input::placeholder {
+        font-size: 13px;
+        padding: 20px;
+    }
+    .btn-search {
+        height: 22px;
+        width: 32px;
+        right: 26px;
+        top: 0.5px;
+    }
+    .btn-search img {
+        height: 13px;
+    }
+    .autocomplete {
+        width: 206px;
+        position: relative;
+        left: 13px;
+    }
+    .autocomplete-item {
+        font-size: 13px;
+        text-align: left;
+        padding-left: 8px;
+        position: relative;
+    }
+    .Resultados {
+        font-size: 16px;
+    }
+    .loading img {
+        width: 80px;
+        height: 60px;
+    }
+    .GifContainer {
+        width: 100%;
+        height: auto;
+    }
+    .gifCard {
+        width: 100%;
+        height: 250px;
+        margin: 20px 25px;
+    }
+}
